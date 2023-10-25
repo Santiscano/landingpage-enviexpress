@@ -1,0 +1,23 @@
+.container{
+  width:100vw;
+  display: flex;
+  justify-content: center;
+}
+.title{
+  font-size: 120px;
+  font-weight: 900;
+  text-align: center;
+  margin-top: 6px;
+  padding: 10px 60px;
+  border-radius: 60px;
+  color: white;
+  background-color: var(--secondary-color);
+}
+
+
+
+.boxshadow {
+  -webkit-box-shadow: 12px 14px 22px -11px rgba(0,0,0,0.41);
+  -moz-box-shadow: 12px 14px 22px -11px rgba(0,0,0,0.41);
+  box-shadow: 12px 14px 22px -11px rgba(0,0,0,0.41);
+}

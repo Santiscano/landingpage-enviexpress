@@ -12,27 +12,29 @@ const slides = [ Image1, Image2, Image3, Image4, Image1, Image2, Image3, Image4 
 
 const Hero = () => {
   return (
-    <Swiper
-      modules={[Navigation,  Pagination, Scrollbar, A11y]}
-      spaceBetween={0}
-      slidesPerView={1}
-      navigation
-      scrollbar={{ draggable: true }}
-      onSlideChange={() => console.log('slide change')}
-      onSwiper={ ( swiper ) => console.log( 'swiper: ', swiper ) }
-      loop
-      autoplay={{
-        delay: 1000,
-        pauseOnMouseEnter: true,
-        disableOnInteraction: false
-      }}
-    >
-      {slides.map(( item, i ) => (
-        <SwiperSlide key={i}>
-          <img src={item} alt={`image ${i}`} className='w-screen'/>
-        </SwiperSlide>
-      ))}
-    </Swiper>
+    <div>
+      <Swiper
+        modules={[Navigation,  Pagination, Scrollbar, A11y]}
+        spaceBetween={0}
+        slidesPerView={1}
+        navigation
+        scrollbar={{ draggable: true }}
+        onSlideChange={() => console.log('slide change')}
+        onSwiper={ ( swiper ) => console.log( 'swiper: ', swiper ) }
+        loop
+        autoplay={{
+          delay: 1000,
+          pauseOnMouseEnter: true,
+          disableOnInteraction: false
+        }}
+      >
+        {slides.map(( item, i ) => (
+          <SwiperSlide key={i}>
+            <img src={item} alt={`image ${i}`} className='w-screen'/>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
   )
 }
 
