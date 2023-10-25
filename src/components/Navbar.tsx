@@ -16,7 +16,7 @@ const Navbar = () => {
       <img
         src={logo}
         alt="Enviexpress Logo"
-        className='w-[280px]'
+        className='w-[200px]'
       />
 
       <div className={`${style['nav-list']}`}>

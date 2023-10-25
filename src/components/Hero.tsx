@@ -12,7 +12,7 @@ const slides = [ Image1, Image2, Image3, Image4, Image1, Image2, Image3, Image4 
 
 const Hero = () => {
   return (
-    <div>
+    <div className=''>
       <Swiper
         modules={[Navigation,  Pagination, Scrollbar, A11y]}
         spaceBetween={0}

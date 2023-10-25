@@ -4,17 +4,42 @@
   justify-content: center;
 }
 .title{
-  font-size: 120px;
-  font-weight: 900;
+  font-size: var(--font-x-large);
+  font-weight: bolder;
   text-align: center;
   margin-top: 6px;
   padding: 10px 60px;
-  border-radius: 60px;
+  border-radius: 30px;
   color: white;
   background-color: var(--secondary-color);
 }
 
+/* ---------------------------cards------------------ */
+.title-card {
+  font-size: var(--font-x-large);
+  font-weight: 900;
+  color: white;
+  background-color: var(--secondary-color);
+  width: 70%;
+  border-radius: 0 40px 40px 0;
+  text-align: left;
+  padding-left: 40px;
 
+}
+.text-card {
+  text-align: justify;
+  padding: 20px 60px;
+}
+
+.icon-blue{
+  filter: invert(43%) sepia(94%) saturate(1408%) hue-rotate(163deg) brightness(96%) contrast(102%);
+}
+
+.divider {
+  width: 90%;
+  margin: 40px auto;
+  border: 1px solid var(--quaternary-color);
+}
 
 .boxshadow {
   -webkit-box-shadow: 12px 14px 22px -11px rgba(0,0,0,0.41);

@@ -1,8 +1,9 @@
+import style from '../styles/services.module.css';
 
 const Services = () => {
   return (
     <div>
-      <h2>Nuestros servicios</h2>
+      <h2 className={`${style.title}`}>Nuestros servicios</h2>
     </div>
   )
 }

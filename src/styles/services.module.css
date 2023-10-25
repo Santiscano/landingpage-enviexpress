@@ -1,0 +1,6 @@
+.title{
+  font-size: var(--font-x-large);
+  font-weight: 900;
+  text-align: center;
+  color: var(--primary-color);
+}
