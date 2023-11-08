@@ -4,3 +4,19 @@
   text-align: center;
   color: var(--primary-color);
 }
+
+.horizontal-top{
+  width: 600px;
+  margin: 10px;
+  border: 1px solid var(--quaternary-color);
+  transform-origin: top right;
+  transform: skewY(-15deg);
+}
+
+.horizontal-down{
+  width: 600px;
+  margin: 10px;
+  border: 1px solid var(--quaternary-color);
+  transform-origin: bottom left;
+  transform: skewY(-15deg);
+}

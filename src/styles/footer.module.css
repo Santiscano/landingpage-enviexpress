@@ -1,0 +1,27 @@
+
+.container-footer{
+  /* background-color: var(--quaternary-color); */
+  background-color: #eeeeee;
+  color: var(--secondary-color);
+  width: 100vw;
+}
+
+.list-politice{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 15px;
+}
+
+.divider {
+  width: 90%;
+  margin: 0 auto;
+  border: 1px solid var(--quaternary-color);
+}
+
+.copyright{
+  display: flex;
+  justify-content: space-around;
+  padding: 8px;
+  color: #575756;
+}

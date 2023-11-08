@@ -11,7 +11,7 @@ const AboutUs = () => {
       </div>
 
 
-      <section className="grid md:grid-cols-3 gap-14 md:gap-8 mt-20 px-16">
+      <section className="grid md:grid-cols-2 gap-14 md:gap-8 mt-20 px-16">
         <Card
           title="Misión"
           text='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis sapiente sit incidunt, modi laboriosam sed dolor dolore totam deleniti atque labore dolorum vitae reiciendis nulla inventore distinctio, eligendi, perspiciatis fugiat.'
@@ -24,12 +24,12 @@ const AboutUs = () => {
           icon={light}
           alt='imagen bombillo'
         />
-        <Card
+        {/* <Card
           title="visión"
           text='Simple and secure control of your organization’s financial and legal transactions. Send customized invoices and contracts'
           icon={light}
           alt='imagen bombillo'
-        />
+        /> */}
       </section>
 
       <hr

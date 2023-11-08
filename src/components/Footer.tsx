@@ -1,14 +1,21 @@
+import style from '../styles/footer.module.css';
+
 
 const Footer = () => {
   return (
-    <div>
-      <ul>
+    <div className={`${style['container-footer']}`}>
+
+      <ul className={`${style['list-politice']}`}>
         <li>POLÍTICA Y TÉRMINOS</li>
         <li>POLÍTICA DE TRATAMIENTO DE DATOS</li>
         <li>QUEJAS Y RECLAMOS</li>
       </ul>
-      <hr />
-      <span>copyright</span>
+
+      <hr className={`${style.divider}`}/>
+
+      <p className={`${style.copyright}`}>
+        @ copyright 2023 Todos los derechos reservados.
+      </p>
 
     </div>
   )
