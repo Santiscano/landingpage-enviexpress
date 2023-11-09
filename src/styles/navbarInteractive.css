@@ -1,7 +1,8 @@
 
 /*========== NAV ==========*/
 .nav{
-  max-width: 1024px;
+  width: 100vw;
+  padding: 0 10px;
   height: var(--header-height);
   display: flex;
   justify-content: space-between;
@@ -73,3 +74,42 @@
   box-shadow: 0 2px 4px rgba(0,0,0,.1);
 }
 
+.nav__button,
+.nav__button-alt{
+  background-color: var(--first-color-alt);
+  color: white;
+  padding: 1px 30px;
+  border-radius: 10px;
+}
+.nav__button-alt{
+  display: none;
+}
+
+.nav__button:hover,
+.nav__button-alt:hover{
+  background-color: var(--first-color);
+}
+
+
+@media screen and (min-width: 768px) {
+  .nav{
+    height: calc(var(--header-height) + 1.5rem);
+  }
+  .nav__list{
+    display: flex;
+    gap: var(--mb-2);
+  }
+  .nav__item{
+    /* margin-left: var(--mb-5); */
+    margin-bottom: 0;
+  }
+  .nav__toggle{
+    display: none;
+  }
+  .nav__button-alt{
+    display: block;
+  }
+  .nav__button{
+    display: none;
+  }
+}

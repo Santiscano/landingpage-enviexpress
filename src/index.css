@@ -127,6 +127,12 @@ img{
   height: auto;
 }
 
+hr{
+  border-left: 1px solid var(--second-color-alt);
+  height: 30px;
+  margin: auto;
+}
+
 /*========== CLASS CSS ==========*/
 .section{
   padding: 4rem 0 2rem;
@@ -169,4 +175,30 @@ img{
   left: 0;
   z-index: var(--z-fixed);
   background-color: var(--body-color);
+}
+
+
+/* Scroll top */
+.scrolltop{
+  position: fixed;
+  right: 1rem;
+  bottom: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .3rem;
+  background: var(--first-color);
+  border-radius: .4rem;
+  z-index: var(--z-tooltip);
+  transition: .4s;
+  /* visibility: hidden; */
+}
+
+.scrolltop:hover{
+  background-color: var(--first-color-alt);
+}
+
+.scrolltop__icon{
+  font-size: 1.8rem;
+  color: var(--body-color);
 }
