@@ -46,12 +46,18 @@ const NavbarInteractive = () => {
         >
           <ul className="nav__list">
             <li className="nav__item">
+              <i className='bx bx-search'></i>
               <a href="#about" className="nav__link" onClick={hiddenMenu}>
                 Nosotros
               </a>
             </li>
             <hr />
-            <li className="nav__item"><a href="#services" className="nav__link" onClick={hiddenMenu}>Servicios</a></li>
+            <li className="nav__item">
+              <a href="#services" className="nav__link" onClick={hiddenMenu}>
+                Servicios
+              </a>
+              <i className='bx bxs-down-arrow'></i>
+            </li>
             <hr />
             <li className="nav__item"><a href="#contact" className="nav__link" onClick={hiddenMenu}>Contáctanos</a></li>
             <hr />
