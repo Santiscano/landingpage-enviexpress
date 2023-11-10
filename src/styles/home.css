@@ -3,14 +3,7 @@
   flex-direction: column;
 }
 
-.element1{
-  order: 2;
-}
-
-.element2{
-  order: 1;
-}
-
+/* ========seccion tracking========= */
 .container__tracking{
   position: absolute;
   display: flex;
@@ -28,6 +21,58 @@
   padding: 5px;
 }
 
+/* ========seccion 1========= */
+.container-text{
+  order: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding: 0 8%;
+}
+.container-text h2 {
+  color: var(--text-color);
+  font-size: var(--font-large);
+  font-weight: var(--font-semi-bold);
+  margin: 1rem 0 .5rem;
+}
+.container-text p {
+  color: var(--text-color);
+}
+
+/* ========seccion 2========= */
+.container-img{
+  order: 1;
+  position: relative;
+}
+.container-img .person-circle {
+  max-height: 20rem;
+  margin: auto;
+  z-index: 1;
+}
+.container__social-media {
+  width: 2.5rem;
+  height: 10rem;
+  position: absolute;
+  top: 12.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: .4rem;
+  border-radius: 0px 30px 30px 0px;
+  background-color: #fff;
+  z-index: 1;
+}
+.container__social-media i {
+  color: var(--first-color);
+  width: 100%;
+  font-size: 1.1rem; /* tamaño icono */
+  text-align: center;
+  margin-top: .5rem;
+  cursor: pointer;
+}
+
 /* ==================================ACCORDION============================== */
 .accordion-menu {
 	display: inline-block;
@@ -37,8 +82,8 @@
   width: 18rem;
   height: 7rem;
   border-radius: 5rem;
-  /* box-shadow: 10px 20px 20px 7px rgba(0,0,0,0.3); */
 	transform: translate(-50%, 0);
+  z-index: 3;
 }
 .accordion-menu h2 {
 	font-size: 18px;
@@ -163,31 +208,46 @@
 	}
 }
 /* ==================================FIN ACCORDION============================== */
-
-
-
 /* vista pc tablet */
 @media screen and (min-width: 768px) {
   .home{
     flex-direction: row;
     width: 100vw;
-    height: 85vh;
+    height: 75vh;
     /* background-color: aqua; */
   }
-  .element1{
+  .container-text{
     order: 1;
     width: 50%;
   }
-  .element2{
+  .container-img{
     order: 2;
     width: 50%;
   }
   .accordion-menu{
-    top: 10rem;
-    left: 16rem;
+    top: 6rem;
+    left: 13rem;
+  }
+  .container__social-media {
+    background: rgb(28,36,91);
+    background: linear-gradient(180deg, rgba(28,36,91,1) 0%, rgba(51,114,164,1) 50%, rgba(0,167,225,1) 100%);
+  }
+  .container__social-media i {
+    color: white;
   }
 }
 
+/* vista celular */
+@media screen and (max-width: 768px) {
+  .container-img {
+    background: rgb(28,36,91);
+    background: linear-gradient(90deg, rgba(28,36,91,1) 0%, rgba(51,114,164,1) 42%, rgba(0,167,225,1) 100%);
+  }
+  .accordion-menu{
+    left: 7.5rem;
+    width: 12rem;
+  }
+}
 
 
 

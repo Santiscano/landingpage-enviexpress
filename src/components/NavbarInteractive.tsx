@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 
-import logo from '../assets/img/logo-envi.png';
+import logo from '../assets/img/logo-horizontal.png';
 import '../styles/navbarInteractive.css';
 
 const NavbarInteractive = () => {

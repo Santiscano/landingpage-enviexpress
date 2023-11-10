@@ -8,6 +8,7 @@ import NavbarInteractive from "../components/NavbarInteractive"
 // import Services from "../components/Services"
 import { useEffect } from 'react';
 import Home from "../components/Home";
+import MiniCards from "../components/MiniCards";
 
 
 const Landing = () => {
@@ -37,7 +38,7 @@ const Landing = () => {
       {/* <Navbar/> */}
       <main>
         <Home/>
-
+        <MiniCards/>
         {/*
         <Hero/>
         <AboutUs/>
