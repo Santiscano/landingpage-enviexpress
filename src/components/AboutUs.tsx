@@ -1,28 +1,40 @@
-
-import style from '../styles/about.module.css';
+import '../styles/about.css';
+import style from '../styles/about.module.css'; //! eliminar al terminar
 import arrow from '../assets/svg/arrow.svg';
 import light from '../assets/svg/light.svg';
+import car from '../assets/img/bg-car.png';
 
 const AboutUs = () => {
   return (
     <>
-      <div className={style.container}>
-        <h2 className={`${style.title} ${style.boxshadow}`}>¿Quiénes somos?</h2>
+      <div className="about-us">
+        <div className='about__container-img'>
+          <img src={car} alt="bg car" className='about__img-card'/>
+        </div>
+        <div className='about__container-text'>
+          <h2 className='about__about-us-title'>¿Quiénes somos?</h2>
+          <p className='about__about-us-text'>
+            En el corazón de nuestra esencia, nos encontramos como pioneros en soluciones logísticas a medida, donde la excelencia se encuentra con la innovación. Somos más que una empresa; somos arquitectos del movimiento, impulsados por tecnología vanguardista y servicios de conectividad poderosos.
+          </p>
+          <button className='about__about-us-button'>
+            Leer más
+          </button>
+        </div>
       </div>
 
 
-      <section className="grid md:grid-cols-2 gap-14 md:gap-8 mt-20 px-16">
+      <section className="about__container-mision-vision">
         <Card
           title="Misión"
-          text='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis sapiente sit incidunt, modi laboriosam sed dolor dolore totam deleniti atque labore dolorum vitae reiciendis nulla inventore distinctio, eligendi, perspiciatis fugiat.'
+          text='Brindamos soluciones integrales de servicio a nuestros aliados, siendo su último eslabón en la cadena de valor.  Generamos experiencias positivas a cada uno de los actores: colaboradores, proveedores, consumidores, aliados y accionistas. Velamos para que nuestros actos vayan encaminados a construir un mundo mejor.'
           icon={arrow}
-          alt='imagen de flecha'
+          alt='imagen Misión'
         />
         <Card
           title="visión"
-          text='Simple and secure control of your organization’s financial and legal transactions. Send customized invoices and contracts'
+          text='Ser una compañía reconocida como la mejor en soluciones logísticas a la medida, apoyados en tecnología y servicios de conectividad potentes, sin límites para innovar, basados en el principio de “CRECER HACIENDO CRECER”.'
           icon={light}
-          alt='imagen bombillo'
+          alt='Imagen Visión'
         />
         {/* <Card
           title="visión"
@@ -32,9 +44,9 @@ const AboutUs = () => {
         /> */}
       </section>
 
-      <hr
+      {/* <hr
         className={`${style.divider}`}
-      />
+      /> */}
 
     </>
   )
@@ -46,22 +58,16 @@ export default AboutUs
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const Card = ({title, text, icon, alt}: any) => {
   return (
-    <>
-
-      <div className='bg-white shadow-xl py-6 text-center rounded-xl'>
-        <div className="rounded-full w-16 h-16 flex items-center justify-center mx-auto shadow-lg transform -translate-y-12 bg-[#fff]">
-          <img
-            src={icon}
-            alt={alt}
-            className={`${style['icon-blue']}`}
-          />
-        </div>
-        <h1 className={`${style['title-card']}`}>{title}</h1>
-          <p className={`${style['text-card']}`}>
-            {text}
-          </p>
+    <div className='mision-vision__container-card'>
+      <div className="mision-vision__card__container-img">
+        <img
+          src={icon}
+          alt={alt}
+          className='mision-vision__card__img'
+        />
       </div>
-
-    </>
+      <h2 className='mision-vision__card__title'> {title} </h2>
+      <p className={`${style['text-card']}`}> {text} </p>
+    </div>
   )
 }

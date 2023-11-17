@@ -1,8 +1,10 @@
+import { useEffect, useState } from 'react';
+
 import '../styles/home.css';
 import Accordion from './tools/Accordion';
 import Circle from './tools/Circle';
+
 import person from '../assets/img/silueta-persona.png';
-import { useEffect, useState } from 'react';
 
 const Home = () => {
   const [innerWidth, setInnerWidth] = useState(true);
@@ -35,11 +37,36 @@ const Home = () => {
     <section className='home' id='home'>
       <Accordion/>
       <div className="container-text">
-        <h2>Welcome to our website!</h2>
-        <p>This is a simple project created by the team of developers at Teclab in medellin.</p>
+        <h2>RED POTENTE DE DISTRIBUCION LOGISTICA</h2>
+        <p>Compañia de transporte de carga y distribución, especializada en prestar servicios a empresas de VENTA DIRECTA A NIVEL NACIONAL.</p>
       </div>
       <div className="container-img">
-        <img src={person} className='person-circle' alt="imagen persona" />
+        <div className='img-void'></div>
+        <div className='bg-img'>
+          <img src={person} className='person-circle' alt="imagen persona" />
+          {!innerWidth && (
+            <>
+              <Circle
+                style={{
+                  width: "4rem",
+                  height: "4rem",
+                  position: "absolute",
+                  top: "3rem",
+                  right: "-2rem"
+                }}
+              />
+              <Circle
+                style={{
+                  width: "4rem",
+                  height: "4rem",
+                  position: "absolute",
+                  top: "6rem",
+                  left: "4rem"
+                }}
+              />
+            </>
+          )}
+        </div>
         {innerWidth && (
           <>
             <Circle

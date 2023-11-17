@@ -1,5 +1,5 @@
-// import AboutUs from "../components/AboutUs"
-// import Contact from "../components/Contact"
+import AboutUs from "../components/AboutUs"
+import Contact from "../components/Contact"
 // import Footer from "../components/Footer"
 import { useState } from "react";
 // import Hero from "../components/Hero"
@@ -39,11 +39,11 @@ const Landing = () => {
       <main>
         <Home/>
         <MiniCards/>
+        <AboutUs/>
+        <Contact/>
         {/*
         <Hero/>
-        <AboutUs/>
         <Services/>
-        <Contact/>
         <Footer/> */}
       </main>
     </>

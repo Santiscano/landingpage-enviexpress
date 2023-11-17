@@ -28,7 +28,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: auto;
+  margin: 0 auto;
   padding: 0 8%;
 }
 .container-text h2 {
@@ -45,11 +45,23 @@
 .container-img{
   order: 1;
   position: relative;
+  display: flex;
+}
+.img-void{
+  width: 20%;
+}
+.bg-img{
+  width: 80%;
+  height: 70%;
+  margin: 2rem 0 0;
+  border-radius: 5rem 0px 0px 5rem;
+  background: var(--bg-to-gradient);
+  background: var(--bg-linear-gradient);
 }
 .container-img .person-circle {
   max-height: 20rem;
   margin: auto;
-  z-index: 1;
+  z-index: 10;
 }
 .container__social-media {
   width: 2.5rem;
@@ -77,10 +89,10 @@
 .accordion-menu {
 	display: inline-block;
   position: absolute;
-  top: 5rem;
-  left: 11rem;
+  top: 8rem;
+  left: 14rem;
   width: 18rem;
-  height: 7rem;
+  /* height: 7rem; */
   border-radius: 5rem;
 	transform: translate(-50%, 0);
   z-index: 3;
@@ -123,8 +135,7 @@
 	padding: 0;
 	margin: 0;
 	padding-bottom: 4px;
-	padding-top: 18px;
-    border-top: 1px dotted #dce7eb;
+  border-top: 1px solid var(--second-color-alt);
 }
 .accordion-menu ul li:nth-child(1){ border:none; }
 .accordion-menu ul li:nth-of-type(1) { animation-delay: 0.5s; }
@@ -212,22 +223,19 @@
 @media screen and (min-width: 768px) {
   .home{
     flex-direction: row;
-    width: 100vw;
     height: 75vh;
     /* background-color: aqua; */
   }
   .container-text{
     order: 1;
     width: 50%;
+    padding-right: 0px;
   }
   .container-img{
     order: 2;
     width: 50%;
   }
-  .accordion-menu{
-    top: 6rem;
-    left: 13rem;
-  }
+
   .container__social-media {
     background: rgb(28,36,91);
     background: linear-gradient(180deg, rgba(28,36,91,1) 0%, rgba(51,114,164,1) 50%, rgba(0,167,225,1) 100%);
@@ -235,17 +243,33 @@
   .container__social-media i {
     color: white;
   }
+  .container-img{
+    overflow-x: hidden;
+  }
+}
+@media (min-width: 769px) and (max-width: 945px)  {
+  .accordion-menu{
+    top: 6rem;
+    left: 13rem;
+  }
 }
 
 /* vista celular */
 @media screen and (max-width: 768px) {
+  .container-text {
+    margin-bottom: 3rem;
+  }
   .container-img {
     background: rgb(28,36,91);
     background: linear-gradient(90deg, rgba(28,36,91,1) 0%, rgba(51,114,164,1) 42%, rgba(0,167,225,1) 100%);
   }
   .accordion-menu{
-    left: 7.5rem;
+    left: 8rem;
+    top: 5rem;
     width: 12rem;
+  }
+  .bg-img{
+    background: none;
   }
 }
 
