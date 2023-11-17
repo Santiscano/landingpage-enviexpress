@@ -1,0 +1,15 @@
+.container__mini-cards {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  margin: 1rem 0;
+}
+
+.container-card {
+  border-radius: 1.5rem;
+  -webkit-box-shadow: 12px 14px 22px -11px rgba(0,0,0,0.41);
+  -moz-box-shadow: 12px 14px 22px -11px rgba(0,0,0,0.41);
+  box-shadow: 12px 14px 22px -11px rgba(0,0,0,0.41);
+}

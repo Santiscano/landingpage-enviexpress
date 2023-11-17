@@ -1,4 +1,11 @@
-
+.l-header{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  background-color: var(--body-color);
+}
 /*========== NAV ==========*/
 .nav{
   width: 100vw;
@@ -57,7 +64,7 @@
 }
 
 /* Show menu */
-.mav__menu .show-menu{
+.nav__menu .show-menu{
   top: var(--header-height);
 }
 /* .hidden-menu{
