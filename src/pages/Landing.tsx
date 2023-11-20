@@ -1,14 +1,12 @@
 import AboutUs from "../components/AboutUs"
 import Contact from "../components/Contact"
-// import Footer from "../components/Footer"
+import Footer from "../components/Footer"
 import { useState } from "react";
-// import Hero from "../components/Hero"
-// import Navbar from "../components/Navbar"
 import NavbarInteractive from "../components/NavbarInteractive"
-// import Services from "../components/Services"
 import { useEffect } from 'react';
 import Home from "../components/Home";
 import MiniCards from "../components/MiniCards";
+import Services from "../components/Services";
 
 
 const Landing = () => {
@@ -40,11 +38,9 @@ const Landing = () => {
         <Home/>
         <MiniCards/>
         <AboutUs/>
-        <Contact/>
-        {/*
-        <Hero/>
         <Services/>
-        <Footer/> */}
+        <Contact/>
+        <Footer/>
       </main>
     </>
   )

@@ -4,7 +4,6 @@
   justify-content: space-around;
   align-items: center;
 }
-
 .contact__container-section-one,
 .contact__container-section-card {
   width: 50%;
@@ -20,7 +19,6 @@
   justify-content: center;
   gap: 2rem;
 }
-
 .contact__card-contac-numbers{
   width: 85%;
   display: flex;
@@ -43,7 +41,6 @@
 .contact__list_phones p{
   color: var(--second-color-alt);
 }
-
 .form-container{
   height: 150px;
   background: rgba( 255, 255, 255, 0.1 );
@@ -52,4 +49,24 @@
   -webkit-backdrop-filter: blur( 1px );
   border-radius: 10px;
   border: 1px solid rgba( 255, 255, 255, 0.1 );
+}
+
+@media (max-width: 768px) {
+  .contact__container-contact{
+    flex-direction: column;
+    padding: 30px;
+  }
+  .contact__container-section-card{
+    width: 90%;
+    justify-content: center;
+  }
+  .contact__card-contac-numbers{
+    flex-wrap: wrap;
+  }
+  .contact__list_phones h3{
+    font-size: var(--h2-font-size);
+  }
+  .contact__list_phones p{
+    font-size: var(--h3-font-size);
+  }
 }

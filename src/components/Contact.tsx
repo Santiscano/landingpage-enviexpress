@@ -50,7 +50,8 @@ const Contact = () => {
               height: "6rem",
               position: "absolute",
               top: "-3rem",
-              right: "-3rem"
+              right: "-3rem",
+              boxShadow: "-18px -40px 15px -3px rgba(0, 0, 0, 0.1)"
             }}
           />
         )}
